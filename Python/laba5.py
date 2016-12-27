@@ -45,14 +45,10 @@ while change == 1:
         output = ' '
     elif name == 2:
         while x < x2:
-            function = (-(1)/(math.sin(72*a**2-5*a*x-12*x**2-pi/2 )))
-            print("F = ", function)
-            output = output + str(function)
-            delta_function = 2 ** (10 * a * a - 29 * a * (x + step) + 18 * (x + step) * (x + step))
-            if fabs(delta_function - function) > delta:
-                while fabs(delta_function - function) > delta:
-                    step /= 2
-                    delta_function = 2 ** (10 * a * a - 29 * a * (x + step) + 18 * (x + step) * (x + step))
+            if perm2 != 0:
+                function = (-(1)/(math.sin(72*a**2-5*a*x-12*x**2-pi/2 )))
+                print("F = ", function)
+                output = output + str(function)
             x += step
             i += 1
             if x >= x2 or i > 100:

@@ -18,8 +18,7 @@ perm3 = (42 * a ** 2 + 53 * a * x + 15 * x ** 2 + 1)
 while x < gran:
     if perm1 != 0:
         function = (-(8*(7*a**2+34*a*x-5*x**2))/(27*a**2+33*a*x+10*x**2))
-        str(function)
-        output.append(function)
+        output.append(str(function))
     x = x + step
     n = n + 1
     if x >= gran or n > 100:
@@ -32,8 +31,7 @@ n = 0
 
 while x < gran:
         function = (-(1) / (math.sin(72 * a ** 2 - 5 * a * x - 12 * x ** 2 - pi / 2)))
-        str(function)
-        output.append(function)
+        output.append(str(function))
         x = x + step
         n = n + 1
 
